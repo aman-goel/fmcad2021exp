@@ -1,6 +1,6 @@
-## Artifact for the FMCAD'21 paper:
+# Artifact for the FMCAD'21 paper:
    
-#   *Towards an Automatic Proof of Lamport's Paxos*
+##   *Towards an Automatic Proof of Lamport's Paxos*
 --------------------------------------------------------------------------
 includes:
 - all experimental data and logs
@@ -24,13 +24,15 @@ Check the License.txt in the artifact for license information.
 Note-
 If the experiments are too resource intensive for your machine,
 change the line timeMax="18000" to  timeMax="3600" in the following files:
+````
    - exp/ic3po/ic3po.sh
    - exp/i4/i4.sh
    - exp/mypyv/updr.sh
    - exp/mypyv/folic3.sh
    - exp/swiss/swiss.sh
    - exp/distai/distai.sh
-   
+````
+
 All compiled results are available in exp/results/* folder.
 All detailed logs are available in exp/<tool>/output*/* folder.
    
@@ -42,6 +44,7 @@ Make sure the artifact is in the /home/username/ directory.
 This means, this file should be present at /home/username/artifact/README.txt
 
 Installation:
+````	
   -- install solvers:
 	z3       - https://github.com/Z3Prover/z3/releases/tag/z3-4.8.10
 	yices2 - https://github.com/SRI-CSL/yices2
@@ -66,7 +69,8 @@ Installation:
   
   -- enter the EXPATH directory
      cd $EXPATH
-
+````
+	
 For complete assessment, run:
   KICK=0 ./run_all.sh
   
